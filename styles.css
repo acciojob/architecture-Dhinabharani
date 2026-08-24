@@ -1,27 +1,30 @@
-/*  your css code here. If applicable */
-
 * { 
     box-sizing: border-box;
 }
 
 body {
-            margin: 0;
-            padding: 0;
-            background-color: #cbd6cb;
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center; 
+    margin: 0;
+    padding: 0;
+    width: 100%;             /* Ensures body fills full screen width */
+    min-height: 100vh;       /* Ensures body fills full screen height */
+    background-color: #cbd6cb;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start;  /* Keeps #main aligned to the top */
 }
+
 #main {
     background-color: #CBD6CB;
-    width: 1100px;
+    width: 100%;              /* Allows responsiveness */
+    max-width: 1100px;        /* Limits max width to 1100px */
     padding: 10px; 
 }
 
 .top-img {
-    width:60%;
-	height:auto;
-	display:block;
+    width: 60%;
+    height: auto;
+    display: block;
 }
 
 .imageContainer {
@@ -33,33 +36,32 @@ body {
     width: 100%;
     table-layout: fixed;
     border: 1px solid black;
-	background-color:#cbd6cb;
-
+    background-color: #cbd6cb;
 }
 
-.table1 td{
-	border:1px solid #777;
-	padding:6px;
-	vertical-align:top;
-	font-size:14px;
-	line-height:1.3;
+.table1 td {
+    border: 1px solid #777;
+    padding: 6px;
+    vertical-align: top;
+    font-size: 14px;
+    line-height: 1.3;
 }
 
-
-.table1 td:first-child ,
-.table1 td:last-child  {
+.table1 td:first-child,
+.table1 td:last-child {
     width: 20%;
 }
 
 .table1 td:nth-child(2) {
     width: 60%;
 }
+
 .table-img {
     width: 100%;
     height: 140px;
     object-fit: cover;
-	display:block;
-	margin-bottom:6px;
+    display: block;
+    margin-bottom: 6px;
 }
 
 .aliner {
@@ -67,32 +69,35 @@ body {
 }
 
 .aliner p {
- margin:5px 0;
+    margin: 5px 0;
 }
 
-.unit-list{
-	list-style:none;
-	padding:0;
-	margin:0;
-	text-align:center;
-}
-unit-list li{
-	margin-bottom:2px;
+.unit-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
 }
 
-h2{
-	text-align:center;
-	font-size:16px;
-	margin:4px 0 10px 0;
-	font-weight:bold;
+/* Fixed missing dot prefix */
+.unit-list li {
+    margin-bottom: 2px;
 }
+
+h2 {
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 0 10px 0;
+    font-weight: bold;
+}
+
 .element {
-	text-align:center;
-	margin:0;
-	font-size:14px;
-	line-height:1.35;
-}
-a{
-	color:purple;
+    text-align: center;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.35;
 }
 
+a {
+    color: purple;
+}
