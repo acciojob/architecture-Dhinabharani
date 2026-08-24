@@ -5,13 +5,13 @@
 body {
     margin: 0;
     padding: 0;
-    width: 100%;             /* Ensures body fills full screen width */
-    min-height: 100vh;       /* Ensures body fills full screen height */
+    width: 100%;             
+    min-height: 100vh;       
     background-color: #cbd6cb;
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center; 
-    align-items: flex-start;  /* Keeps #main aligned to the top */
+    align-items: flex-start;  
 }
 
 #main {
